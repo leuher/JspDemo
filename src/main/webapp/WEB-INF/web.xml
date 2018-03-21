@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app  version="2.5"
+          xmlns="http://java.sun.com/xml/ns/javaee"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <!--监听器Listener-->
+    <listener>
+        <listener-class>com.listener.InitNumListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.listener.UserEnterListener</listener-class>
+    </listener>
+
+    <!--session过期时间为1分钟  0为不过期-->
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+
+
+    <servlet>
+        <servlet-name>BookList</servlet-name>
+        <servlet-class>com.control.BookList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookList</servlet-name>
+        <url-pattern>/BookList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookAdd</servlet-name>
+        <servlet-class>com.control.BookAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookAdd</servlet-name>
+        <url-pattern>/BookAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookUpdate</servlet-name>
+        <servlet-class>com.control.BookUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookUpdate</servlet-name>
+        <url-pattern>/BookUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookDoUpdate</servlet-name>
+        <servlet-class>com.control.BookDoUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookDoUpdate</servlet-name>
+        <url-pattern>/BookDoUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookDelete</servlet-name>
+        <servlet-class>com.control.BookDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookDelete</servlet-name>
+        <url-pattern>/BookDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookDoDelete</servlet-name>
+        <servlet-class>com.control.BookDoDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookDoDelete</servlet-name>
+        <url-pattern>/BookDoDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookBatchAdd</servlet-name>
+        <servlet-class>com.control.BookBatchAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookBatchAdd</servlet-name>
+        <url-pattern>/BookBatchAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookBatchDelete</servlet-name>
+        <servlet-class>com.control.BookBatchDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookBatchDelete</servlet-name>
+        <url-pattern>/BookBatchDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookFind</servlet-name>
+        <servlet-class>com.control.BookFind</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookFind</servlet-name>
+        <url-pattern>/BookFind</url-pattern>
+    </servlet-mapping>
+
+
+    <!--验证码功能-->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.control.Login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DrawImage</servlet-name>
+        <servlet-class>com.control.DrawImage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DrawImage</servlet-name>
+        <url-pattern>/DrawImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.control.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginUser</servlet-name>
+        <servlet-class>com.control.LoginUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginUser</servlet-name>
+        <url-pattern>/LoginUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExitLogin</servlet-name>
+        <servlet-class>com.control.ExitLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExitLogin</servlet-name>
+        <url-pattern>/ExitLogin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Upload</servlet-name>
+        <servlet-class>com.control.Upload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upload</servlet-name>
+        <url-pattern>/Upload</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListFile</servlet-name>
+        <servlet-class>com.control.ListFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListFile</servlet-name>
+        <url-pattern>/ListFile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Download</servlet-name>
+        <servlet-class>com.control.Download</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Download</servlet-name>
+        <url-pattern>/Download</url-pattern>
+    </servlet-mapping>
+
+    <!--Ajax-->
+    <servlet>
+        <servlet-name>UserCheckAjax</servlet-name>
+        <servlet-class>com.control.UserCheckAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserCheckAjax</servlet-name>
+        <url-pattern>/UserCheckAjax</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserCheckAjax2</servlet-name>
+        <servlet-class>com.control.UserCheckAjax2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserCheckAjax2</servlet-name>
+        <url-pattern>/UserCheckAjax2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SecondMenu</servlet-name>
+        <servlet-class>com.control.SecondMenu</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SecondMenu</servlet-name>
+        <url-pattern>/SecondMenu</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>OutputExcel</servlet-name>
+        <servlet-class>com.control.OutputExcel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OutputExcel</servlet-name>
+        <url-pattern>/OutputExcel</url-pattern>
+    </servlet-mapping>
+ 
+
+    <!--登录拦截-->
+    <!--<filter>-->
+        <!--<filter-name>LoginFilter</filter-name>-->
+        <!--<filter-class>com.Filter.LoginFilter</filter-class>-->
+        <!--<init-param>-->
+            <!--<param-name>noLoginPaths</param-name>-->
+            <!--<param-value>registerUser.jsp;bookList.css;userStyle.css;loginSql.jsp;login.jsp;fail.jsp;Login;ErrorFilter;DrawImage</param-value>-->
+        <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>LoginFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <!--配置过滤器-->
+    <filter>
+        <filter-name>CharSetFilter</filter-name>
+        <filter-class>com.Filter.CharSetFilter</filter-class>
+        <init-param>
+            <!--用来指定一个具体的字符集-->
+            <param-name>charset</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <!--映射过滤器-->
+    <filter-mapping>
+        <filter-name>CharSetFilter</filter-name>
+        <!--“/*”表示拦截所有的请求 -->
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--拦截404,500页面-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error/error500.jsp</location>
+    </error-page>
+    <filter>
+        <filter-name>ErrorFilter</filter-name>
+        <filter-class>com.Filter.ErrorFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ErrorFilter</filter-name>
+        <url-pattern>/error.jsp</url-pattern>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+</web-app>

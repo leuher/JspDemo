@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;;
+    font-size: 12px;
+}
+.border{
+    width: 500px;
+    height: 500px;
+}
+.head{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0 0 130px ;
+    line-height: 10px;
+}
+td{
+    font-size: 12px;
+}
+.div1 ul li{
+    list-style-type: none;
+    float: left;
+    margin: 20px 20px 0 0;
+}
+.div2{
+    margin: 100px 0 0 -80px;
+}
+.divreg{
+    float: left;
+    margin: 100px 0 0 -400px;
+}
+.divmsg{
+    float: left;
+    margin: -10px 0 0 -120px;
+}
+.out{
+    margin: 100px 0 0 150px;
+}
+a:link{
+    font-family:Verdana;
+    font-size:12px;
+    color:black;
+    text-decoration: underline;
+}
+a:hover{
+    font-family:Verdana;
+    font-size:12px;
+    color:red;
+    text-decoration:none;
+}
+a:visited{
+    font-family:Verdana;
+    font-size:12px;
+    color:black;
+    text-decoration: underline;
+}

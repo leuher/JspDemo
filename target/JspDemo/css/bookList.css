@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+body {
+    margin: 0px;
+    font-size: 12px;
+}
+ul {
+    padding-bottom: 20px;
+}
+li {
+    float: left;
+    padding-left: 60px;
+    list-style: none;
+}
+table{
+    border:solid 1px;
+}
+.list{
+    text-align:center;
+    font-size:36px;
+    font-weight: bold;
+}
+a:link{
+    font-family:Verdana;
+    font-size:12px;
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    font-family:Verdana;
+    font-size:12px;
+    color:red;
+    text-decoration:none;
+}
+a:visited{
+    font-family:Verdana;
+    font-size:12px;
+    color:black;
+    text-decoration: underline;
+}
